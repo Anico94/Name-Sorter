@@ -6,8 +6,8 @@ from name_sorter import TextFileWriter as tfw
 
 class TestNameSorter(unittest.TestCase):
   def test_sort_by_last_name(self):
-    sorted_name_list = ns(['Alex Nico', 'Andrea Lawton', 'Peter Michael Kid']).sort_by_last_name()
-    self.assertEqual(sorted_name_list, ['Peter Michael Kid','Andrea Lawton','Alex Nico'])
+    sorted_name_list = ns(['Alex Nico', 'Andrea Lawton', 'Peter Michael']).sort_by_last_name()
+    self.assertEqual(sorted_name_list, ['Andrea Lawton','Peter Michael','Alex Nico'])
 
 
 class TestTextFileReader(unittest.TestCase):
@@ -36,10 +36,6 @@ class TestTextFileWriter(unittest.TestCase):
   def tearDown(self):
     os.remove('test.txt')
   
-
-    
-
-
 
 if __name__ == '__main__':
   unittest.main()

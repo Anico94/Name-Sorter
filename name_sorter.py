@@ -66,7 +66,7 @@ if __name__ == '__main__':
       print(*sorted_names, sep='\n')
       new_file = TextFileWriter(sorted_names).generate_text_file('sorted-names.txt')
     except:
-      print('Not a valid file please pass a .txt as the command line argument')
+      print('Not a valid file please pass a .txt file as the command line argument')
   except:
     print('Text file of names to be passed as a command line argument')
 
