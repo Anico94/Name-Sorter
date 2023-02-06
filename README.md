@@ -16,8 +16,8 @@ Running this application will display the sorted names to the command line/ term
 
 ## Unit Tests
 
-Unit test have been writen in test_name-sorter.py
+Unit test have been writen in files beginning with "test\_"
 These can be run in the terminal or command line with:
 
-- python test_name-sorter.py or
-- python3 test_name-sorter.py
+- pytest or
+- py.test

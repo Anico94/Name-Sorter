@@ -1,6 +1,6 @@
 import unittest
 import os
-from text_file_writer import TextFileWriter as tfw
+from txt_file_writer import TxtFileWriter as tfw
 
 class TestTextFileWriter(unittest.TestCase):
   def setUp(self):

@@ -1,6 +1,6 @@
 from os import path
 
-class TextFileReader:
+class TxtFileReader:
   """
   Class that reads a text file
   """

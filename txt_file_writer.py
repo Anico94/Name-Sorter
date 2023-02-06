@@ -1,4 +1,4 @@
-class TextFileWriter: 
+class TxtFileWriter: 
   """
   Class that writes a list to a text file
   each list item on a new line

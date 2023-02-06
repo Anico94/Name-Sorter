@@ -1,6 +1,7 @@
 from person import Person
 
-class SortNames:
+class NameSorter:
+  
   """
   Class that sorts names
   """

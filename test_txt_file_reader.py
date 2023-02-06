@@ -1,6 +1,6 @@
 import unittest
 import os
-from text_file_reader import TextFileReader as tfr
+from txt_file_reader import TxtFileReader as tfr
 from os import path
 
 class TestTextFileReader(unittest.TestCase):
