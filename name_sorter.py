@@ -1,30 +1,3 @@
-import sys
-
-class TextFileReader:
-  def __init__(self, file_name):
-    self.file_name = file_name
-
-  def list_of_lines(self):
-    with open(self.file_name, mode = 'r') as file:
-      lines = file.read()
-
-      lines_list = lines.splitlines()
-      return lines_list
-
-
-class TextFileWriter: 
-  def __init__(self, list):
-    self.list = list
-
-  def generate_text_file(self, new_file_name):
-    with open(new_file_name, mode='w',newline='') as file:
-      for i, line in enumerate(self.list):
-        if(i != len(self.list)-1):
-          file.write(line + '\n')
-        else:
-          file.write(line)
-
-
 class NameSorter:
   def __init__(self, list_of_names):
     self.list_of_names = list_of_names
@@ -56,19 +29,4 @@ class NameSorter:
     
     return sorted_names
   
-
-if __name__ == '__main__':
-  try:
-    file_path = sys.argv[1] # allows user to pass an additional argument in the command line (list to sort)
-    try:
-      names_list = TextFileReader(file_path).list_of_lines()
-      sorted_names = NameSorter(names_list).sort_by_last_name()
-      print(*sorted_names, sep='\n')
-      new_file = TextFileWriter(sorted_names).generate_text_file('sorted-names.txt')
-    except:
-      print('Not a valid file please pass a .txt file as the command line argument')
-  except:
-    print('Text file of names to be passed as a command line argument')
-
-
 
