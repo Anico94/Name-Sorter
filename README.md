@@ -10,6 +10,8 @@ Depending on the installation method of python the command line application can 
 - python name_sorter.py unsorted-names-list.txt or
 - python3 name_sorter.py unsorted-names-list.txt
 
+Ensure that you have navigated to the project directory prior to running the commands.
+
 The text file unsorted-names-list.txt should be save in the same directory as the name_sorter.py file.
 
 Running this application will display the sorted names to the command line/ terminal and will create/overwrite a text file "sorted-names.txt" in the working directory.
