@@ -7,9 +7,3 @@ class Person:
     name_parts = name.split(" ")
     self.given_names = " ".join(name_parts[:-1])
     self.last_name = name_parts[-1]
-  
-  
-
-  
-
-  

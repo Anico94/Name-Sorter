@@ -1,6 +1,7 @@
 class TextFileWriter: 
   """
-  #TODO add doc string here
+  Class that writes a list to a text file
+  each list item on a new line
   
   """
   def __init__(self, list):
