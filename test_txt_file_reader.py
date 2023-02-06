@@ -19,7 +19,7 @@ class TestTextFileReader(unittest.TestCase):
       len(tfr('test.txt').list_of_lines()) == 0
     os.remove('test.txt')
 
-  def test_file_exists_in_the_directory(self):
+  def test_file_doesnt_exists_in_the_directory(self):
       with self.assertRaises(Exception):
         path.exists(tfr('test.txt').file_name) == False
 
