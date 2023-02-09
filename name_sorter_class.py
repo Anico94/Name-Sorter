@@ -1,4 +1,4 @@
-from person import Person
+from name import Name
 
 class NameSorter:
   
@@ -8,16 +8,16 @@ class NameSorter:
 
   def sort_by_last_name(self, list_of_names: list[str]) -> list[str]:
 
-    # Initilise a list of that will hold people created from the Person class
+    # Initilise a list of that will hold people created from the name class
     names_of_people = []
     
     for name in list_of_names:
-      names_of_people.append(Person(name))
+      names_of_people.append(Name(name))
     
     #list of people sorted by last name
-    def sorter_order(person: object):
+    def sorter_order(name: object):
       '''order of a list of peoples name first by last then given name'''
-      return (person.last_name, person.given_names)
+      return (name.last_name, name.given_names)
 
     sorted_by_last_name = sorted(names_of_people, key=sorter_order)
 

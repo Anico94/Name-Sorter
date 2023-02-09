@@ -1,4 +1,4 @@
-class Person:
+class Name:
   """
   A class to represent a person by there name
   """
