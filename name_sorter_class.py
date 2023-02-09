@@ -6,7 +6,7 @@ class NameSorter:
   Class that sorts names
   """
 
-  def sort_by_last_name(self, list_of_names):
+  def sort_by_last_name(self, list_of_names: list[str]) -> list[str]:
 
     # Initilise a list of that will hold people created from the Person class
     names_of_people = []

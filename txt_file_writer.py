@@ -5,7 +5,7 @@ class TxtFileWriter:
   
   """
 
-  def generate_text_file(self, list, new_file_name):
+  def generate_text_file(self, list: list[str], new_file_name: str) -> None:
     with open(new_file_name, mode='w') as file:
       for i, line in enumerate(list):
         if(i != len(list)-1):

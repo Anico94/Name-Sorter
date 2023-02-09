@@ -5,7 +5,7 @@ class TxtFileReader:
   Class that reads a text file
   """
 
-  def read_list_of_lines(self, file_name):
+  def read_list_of_lines(self, file_name: str) -> list[str]:
     if (path.exists(file_name) == False):
       raise Exception('This file does not exist in the current directory')
     with open(file_name, mode = 'r') as file:
