@@ -5,7 +5,7 @@ from txt_file_writer import TxtFileWriter as tfw
 class TestTextFileWriter(unittest.TestCase):
   def setUp(self):
     self.string_list = ['file line1','file line2','file line3']
-    tfw(self.string_list).generate_text_file('test.txt')
+    tfw().generate_text_file(self.string_list,'test.txt')
     
   def test_generate_text_file(self):
     with open('test.txt', mode='r', newline='') as file:

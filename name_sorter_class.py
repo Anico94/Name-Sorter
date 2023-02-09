@@ -15,7 +15,11 @@ class NameSorter:
       names_of_people.append(Person(name))
     
     #list of people sorted by last name
-    sorted_by_last_name = sorted(names_of_people, key=lambda person: (person.last_name, person.given_names))
+    def sorter_order(person: object):
+      '''order of a list of peoples name first by last then given name'''
+      return (person.last_name, person.given_names)
+
+    sorted_by_last_name = sorted(names_of_people, key=sorter_order)
 
     # create a list of names(strings) from the sorted people list
     sorted_names_by_last_name = []
